@@ -1,0 +1,91 @@
+:root {
+    --nord0: #2e3440;
+    /* Background color */
+    --nord1: #3b4252;
+    /* Background color */
+    --nord2: #434c5e;
+    /* Background color */
+    --nord3: #4c566a;
+    /* Background color */
+    --nord4: #d8dee9;
+    /* Background color */
+    --nord5: #e5e9f0;
+    /* Background color */
+    --nord6: #eceff1;
+    /* Background color */
+    --nord7: #8fbcbb;
+    /* Foreground color */
+    --nord8: #5e81ac;
+    /* Foreground color */
+    --nord9: #88c0d0;
+    /* Foreground color */
+    --nord10: #81a1c1;
+    /* Foreground color */
+    --nord11: #5e81ac;
+    /* Foreground color */
+    --nord12: #bf616a;
+    /* red */
+    --nord13: #d08770;
+    /* orange */
+    --nord14: #ebcb8b;
+    /* yellow */
+    --nord15: #a3be8c;
+    /* green */
+    --nord16: #b48ead;
+    /* purple */
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    color: var(--nord4);
+}
+
+.titlebar {
+    display: grid;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    grid-template-columns: auto max-content;
+    align-items: center;
+    background: var(--nord0);
+    height: 30px;
+    user-select: none;
+}
+
+.titlebar>.controls {
+    display: flex;
+}
+
+.titlebar button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    appearance: none;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    width: 30px;
+    height: auto !important;
+    color: var(--nord4);
+    font-size: 10px !important;
+}
+
+.titlebar button:hover {
+    background: var(--nord2);
+    color: var(--nord7);
+}
+
+.titlebar button.warning:hover {
+    color: var(--nord13) !important;
+}
+
+.window-icon {
+    display: block;
+    margin-left: 10px;
+    max-height: 100%;
+}

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%sveltekit.assets%/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Codarium Suite</title>
+  %sveltekit.head%
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="/shared.css">
+</head>
+
+<body data-sveltekit-preload-data="hover">
+  <div class="titlebar">
+    <div data-tauri-drag-region>
+      <img class="window-icon" src="/logo-x.png" alt="codarium_icon" height="25px">
+    </div>
+    <div class="controls">
+      <button id="titlebar-minimize" title="minimize">
+        <!-- https://api.iconify.design/mdi:window-minimize.svg -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M19 13H5v-2h14z" />
+        </svg>
+      </button>
+      <button id="titlebar-maximize" title="maximize">
+        <!-- https://api.iconify.design/mdi:window-maximize.svg -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M4 4h16v16H4zm2 4v10h12V8z" />
+        </svg>
+      </button>
+      <button id="titlebar-close" class="warning" title="close">
+        <!-- https://api.iconify.design/mdi:close.svg -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+          <path fill="currentColor"
+            d="M13.46 12L19 17.54V19h-1.46L12 13.46L6.46 19H5v-1.46L10.54 12L5 6.46V5h1.46L12 10.54L17.54 5H19v1.46z" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div style="display: contents">%sveltekit.body%</div>
+
+  <!-- <script type="module" src="/script.js"></script> -->
+</body>
+
+</html>

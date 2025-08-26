@@ -1,0 +1,137 @@
+    :root {
+        --nord0: #2E3440;
+        /* Background color */
+        --nord1: #3B4252;
+        /* Background color */
+        --nord2: #434C5E;
+        /* Background color */
+        --nord3: #4C566A;
+        /* Background color */
+        --nord4: #D8DEE9;
+        /* Background color */
+        --nord5: #E5E9F0;
+        /* Background color */
+        --nord6: #ECEFF1;
+        /* Background color */
+        --nord7: #8FBCBB;
+        /* Foreground color */
+        --nord8: #5E81AC;
+        /* Foreground color */
+        --nord9: #88C0D0;
+        /* Foreground color */
+        --nord10: #81A1C1;
+        /* Foreground color */
+        --nord11: #5E81AC;
+        /* Foreground color */
+        --nord12: #BF616A;
+        /* red */
+        --nord13: #D08770;
+        /* orange */
+        --nord14: #EBCB8B;
+        /* yellow */
+        --nord15: #A3BE8C;
+        /* green */
+        --nord16: #B48EAD;
+        /* purple */
+    }
+
+    body {
+        color: var(--nord4);
+    }
+
+    .command {
+        padding-top: 10px;
+    }
+
+    .close-tab {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.3s;
+        margin-left: 5px;
+        border-radius: 50%;
+        width: 18px;
+        height: 18px;
+        color: var(--nord4);
+        font-size: 12px;
+        text-decoration: none;
+    }
+    .close-tab:hover {
+        background-color: var(--nord1);
+        color: var(--nord13);
+    }
+
+    .tabs {
+        display: flex;
+        border-bottom: 1px solid var(--nord3);
+    }
+    .tab {
+        display: flex;
+        position: relative;
+        align-items: center;
+        cursor: pointer;
+        margin-right: 5px;
+        border: 1px solid transparent;
+        border-bottom: none;
+        background-color: var(--nord2);
+        padding: 3px 10px 3px 10px;
+    }
+    .tab.active {
+        margin-bottom: -1px;
+        border-bottom: none;
+        border-color: var(--nord3);
+        background-color: var(--nord3);
+        font-weight: bold;
+    }
+    .tab-content {
+        display: none;
+        border: 1px solid var(--nord3);
+        border-top: none;
+        background-color: var(--nord3);
+        padding: 20px;
+    }
+    .tab-content.active {
+        display: block;
+    }
+
+    .header {
+        border-bottom: 1px solid var(--nord3);
+        background-color: var(--nord1);
+    }
+
+    .sidebar {
+        border-right: 1px solid var(--nord3);
+        background-color: var(--nord0);
+        min-height: 400px;
+    }
+
+    .status {
+        border-top: 1px solid var(--nord3);
+        background-color: var(--nord1);
+    }
+
+    .status_content {
+        padding: 5px 0 5px 0px;
+        color: var(--nord4);
+    }
+
+    .main {
+        border: 1px solid red;
+        background-color: var(--nord1);
+    }
+
+    input {
+        border-color: var(--nord3) !important;
+        background-color: var(--nord2) !important;
+        height: 30px !important;
+        color: var(--nord4);
+    }
+
+    input:hover {
+        background-color: var(--nord3) !important;
+    }
+
+    input:focus {
+        outline: none;
+        border-color: var(--nord8) !important;
+    }
